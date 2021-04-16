@@ -1,0 +1,233 @@
+/*Stilos personales*/
+body {
+    margin: 0;
+}
+h1 {
+    font-family: 'Lemon', cursive;
+    font-size: 4rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgb(0, 6, 35);
+}
+h2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+}
+p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.15rem;
+    text-align: left;
+}
+main {
+    text-align: center;
+    padding: 0;
+    margin: 1rem auto;
+    width: 60%;
+    color: rgb(30, 30, 30);
+}
+.texto-rojo { color: red; }
+.imagen-a-la-mitad { width: 60%;}
+
+/*Estilo de barra de navegacion*/
+header {
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 3em;
+}
+header a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 1rem 1rem;
+        text-decoration: none;
+        font-size: 1rem;
+}
+header a:hover {
+        background-color: #ddd;
+        color: black;
+}
+header a:active {
+        background-color: #4CAF50;
+        color: white;
+}
+nav {
+        float: right;
+}
+header .icon {
+        display: none;
+}
+
+/*Estilos del footer*/
+footer {
+  background-color: black;
+  text-align: center;
+  font-size: 3rem;
+  /*position: fixed;*/
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+footer a:link, a:visited {
+    text-decoration: none;
+    color: white;
+}
+footer a:active, a:hover {
+    color: gray;
+}
+#postedby{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-top: 0rem;
+    text-decoration: underline;
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+}
+
+#maintitle{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+main a:link, main a:visited {
+    color: inherit;
+}
+main a:active, main a:hover {
+    color: rgb(0, 6, 35);
+}
+
+/*Estilo del personal_profile*/
+#personal_profile {
+    display: block;
+    min-height: 80vh;
+    background: url('https://dl.dropboxusercontent.com/s/5gjjj49i0tr7usr/constelations.jpg') no-repeat center fixed;
+    background-size: cover;
+    padding: 0;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+    color: rgb(255, 255, 255);
+}
+
+#personal_profile button {
+  margin-top: 0.3125rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px; 
+}
+
+#personal_profile hr {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.Mifoto{
+  display: block;
+  width: 12.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+}
+
+div.Mifoto img {
+  max-height: 80%;
+  max-width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+}
+
+.silver-border {
+  border-color: #F0F8FF;
+  border-width: 0.1875rem;
+  border-style: solid;
+  border-radius: 90%;
+}
+#personal_profile h2 {
+  font-family: "Ariel";
+  font-size: 3rem;
+  text-align: center;
+  margin: 0;
+  padding: 1rem, 0, 0, 0;
+}
+
+#personal_profile h3 {
+  text-align: center;
+}
+.listc {
+  border-width: 1px 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #429CCE;
+}
+
+.listc li {
+  display: inline;
+}
+
+.listc a {
+  display: inline-block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: rgb(255,255,255);
+  font-size: 1rem;
+}
+
+.listc a:hover {
+  color: #000000;
+}
+#personal_profile .btn:hover {
+  color: #000000;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#personal_profile .telegrammenu {
+    display: none;
+}
+
+/*Media queries*/
+@media only screen and ( max-width: 1300px ) {
+    main { width: 70%; }
+}
+
+@media only screen and ( max-width: 920px ) {
+    main { width: 70%; }
+}
+
+@media only screen and ( max-width: 728px ) {
+    header a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+    #personal_profile .socialmenu { display: none; }
+    #personal_profile .telegrammenu { display: block; margin-bottom: 2rem; }
+    #personal_profile h2 { font-size: 2rem; }
+}
+
+@media only screen and ( max-width: 728px ) {
+  nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.responsive{
+          width: 100%
+  }
+  nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  main { width: 85%;}
+}

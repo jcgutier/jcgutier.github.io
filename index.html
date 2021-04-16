@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Personal Profile</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/base.css">
+  <script type="text/javascript" src="javascript/base.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Marck+Script|Lemon|Roboto+Slab&display=swap" rel="stylesheet">
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+  <!--Version 5 para los iconos-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+  <header>
+    <a href="{{ url_for('index') }}" class="logo">Home</a>
+    <nav class="topnav" id="nav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    </nav>
+  </header>
+    <div id="personal_profile">
+        <div class="Mifoto">
+            <img src="https://dl.dropboxusercontent.com/s/55vycruxuqxus6m/jc.jpg" class="silver-border">
+        </div>
+        <h2>Juan Carlos Gutiérrez Ortiz</h2>
+        <h3>Ingeniería en Comunicaciones y Electrónica</h3>
+        <hr>
+        <div class="socialmenu">
+            <ul id="menu" class="listc">
+                <li>
+                     <button class="btn">
+		     <a href="www.linkedin.com/in/juan-carlos-gutiérrez-547207b6" target="_blank"><i class="fab fa-linkedin-in" style="font-size:1rem;"></i>&nbsp&nbspLinkedIn</a>
+		     </button>
+                </li>
+                <li>
+                     <button class="btn">
+		     <a href="https://t.me/jcgutier" target="_blank"><i class="fab fa-telegram-plane"></i>&nbsp&nbspTelegram</a>
+		     </button>
+                </li>
+                <li>
+                     <button class="btn">
+		     <a href="https://codepen.io/juan-carlos-go/" target="_blank"><i class="fab fa-codepen" style="font-size:1rem;"></i>&nbsp&nbspCodepen</a></button>
+                </li>
+            </ul>
+        </div>
+        <div class="telegrammenu">
+            <ul id="menu" class="listc">
+                <li>
+                     <button class="btn">
+		     <a href="https://t.me/jcgutier" target="_blank"><i class="fab fa-telegram-plane"></i>&nbsp&nbspTelegram</a>
+		     </button>
+                </li>
+            </ul>
+	</div>
+    </div>
+
+    <main>
+    <h2>Acerca de mí</h2>
+    <hr>
+
+    <p>Soy Ingeniero en Comunicaciones y Electrónica, especializado en comunicaciones, egresado del Instituto Politécnico Nacional. Tengo experiencia como administrador de servidores, redes y cloud. Cuento con experiencia de DevOps desarrollando herramientas de automatización para las operaciones y procesos.</p>
+
+    <p>Mi principal lenguaje de programación es <em>Python</em>, me gusta desarrollar con el framework de Flask junto con HTML, CSS y JavaScript. También manejo Golang y cuento con conocimiento básico de lenguajes como Java, C++. Manejo tenologías como: AWS, Kubernetes, Docker, Ansible, Git, entre otras herramientas de automatizacion y cloud.</p>
+    <hr>
+
+    <p>En mis tiempos libres, me gusta pasar tiempo con mi familia (esposa e hija) ya sea en un paseo en algún parque, playa o en casa viendo una película. Nos gusta mucho viajar y conocer lugares nuevos y divertidos.</p>
+    
+    <p>Me gusta correr y leer novelas literarias de todos los géneros. Soy un aficionado de GNU/Linux, del desarrollo Web y de la electrónica. Me encuento en constante aprendizaje.</p>
+
+    <p>Disfruto de la música electrónica, rock y clásica. Aprecio encontrar nuevas películas o series en los proveedores de streaming.</p>
+    
+    <hr>
+
+    <p>En mi Curriculum Vitae, puedes concontrar información detallada de mi desarrollo profesional.</p>
+    </main>
+<footer>
+    <a href="https://www.youtube.com/user/JCarloz2812" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://jcgutierrez11.wordpress.com/" target="_blank"><i class="fab fa-wordpress"></i></a>
+    <a href="https://twitter.com/jcgutier28" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://gitlab.com/jcgutier" target="_blank"><i class="fab fa-gitlab"></i></a>
+    <p id="postedby"><a href="mailto:jcgutierrezo28@gmail.com">Posted by: Juan Carlos Gutierrez</a></p>
+  </footer>
+</body>
+</html>
