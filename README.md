@@ -1,2 +1,1 @@
-# personal_profile
-My Personal Profile
+# jcgutier.github.io
